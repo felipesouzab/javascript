@@ -7,7 +7,6 @@ function adicionar() {
     } else {
         alert('Tudo ok!')
     }
-    
 }
 
 function finalizar() {
