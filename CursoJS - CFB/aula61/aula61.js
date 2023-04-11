@@ -13,13 +13,4 @@ const Pessoa = {
         this.idade = idade
     }
 }
-const p2 = Pessoa
-const p3 = Pessoa
 
-p3.nome = "Claudio"
-p2["nome"] = "Breno"
-Pessoa.setNome("Marcos")
-
-console.log(Pessoa.nome)
-console.log(p2.getNome())
-console.log(p3.nome)
