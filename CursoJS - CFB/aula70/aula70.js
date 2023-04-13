@@ -7,6 +7,9 @@ const tlimpar = document.getElementById("tlimpar")
 const tigual = document.getElementById("tigual")
 const tcpy = document.getElementById("tcpy")
 const tes = document.getElementById("teste")
+const calc_aba = document.getElementById("calc_aba")
+const calc = document.getElementById("calc")
+const img_aba_calc = document.getElementById("img_aba_calc")
 
 let sinal = false
 let decimal = false
@@ -70,4 +73,13 @@ tcpy.addEventListener("click",(evt)=>{
     // teste.select()    // Método para dispositivos mobile
     // teste.setSelectionRange(0,9999999)
     // navigator.clipboard.writeText(teste.value)
+})
+
+calc_aba.addEventListener("click",(evt)=>{
+    calc.classList.toggle("calc_exibir")  
+    if(calc.classList.contains("calc_exibir")){
+        img_aba_calc.setAttribute("src","seta_esquerda.png")
+    } else {
+        img_aba_calc.setAttribute("src","seta_direita.png")
+    }
 })
