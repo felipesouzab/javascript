@@ -13,6 +13,7 @@ const img_aba_calc = document.getElementById("img_aba_calc")
 
 let sinal = false
 let decimal = false
+let parenteses = false
 
 teclasNum.forEach((el)=>{
     el.addEventListener("click",(evt)=>{
@@ -22,18 +23,16 @@ teclasNum.forEach((el)=>{
                 decimal = true
                 if (display.innerHTML == "0"){
                     display.innerHTML = "0,"
-                } else {
+                }else {
                     display.innerHTML += evt.target.innerHTML
-                }
-                
-            }            
-        } else {
+                }             
+            }
+        }else {
             if(display.innerHTML == "0"){
                 display.innerHTML = ""
             }
             display.innerHTML += evt.target.innerHTML
-        }
-        
+        }        
     })
 })
 
