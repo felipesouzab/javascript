@@ -9,8 +9,8 @@
 </head>
 <body>
     <h1>CFB Cursos</h1>
-    <form>
-        <input type="url" name="url" id="url" placeholder="https://cfbcursos.com.br" pattern="https://" size="30" required>
+    <form onsubmit="event.preventDefault()">
+        <input type="url" name="url" id="url" placeholder="https://cfbcursos.com.br" size="30" required>
         <button id="btn_url">Ir</button>
     </form>
 
