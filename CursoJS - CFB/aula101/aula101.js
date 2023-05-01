@@ -1,5 +1,6 @@
 let nome = new String ("Bruno Pinho Campos")
 let nome2 = new String ("Bruno Pinho Campos")
+let nome3 = new String (nome.toLocaleUpperCase())
 
 let canal = new String ("CFBCursos")
 
@@ -34,6 +35,22 @@ let arr_nome = nome.split(" ")
 console.log(arr_nome)
 
 
+let parte1 = nome.substring(6,11)
+console.log(parte1)
+
+let parte2 = nome.substr(6,5)
+console.log(parte2)
+
+nome = nome.toUpperCase()
+console.log(nome)
+
+console.log(nome3)
 
 
+console.log(nome3.toLowerCase())
 
+console.log(nome.valueOf())
+
+let num = 10
+num = num.toString()
+console.log(typeof(num))
