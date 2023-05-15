@@ -29,8 +29,5 @@ btn_add.addEventListener("click",()=>{
     Pessoa.setIdade = ""
     Pessoa.getNome().value = ""
     Pessoa.getIdade().value = ""
-    Pessoa.getNome().focus()
-
-    
-
+    Pessoa.getNome().focus() 
 })
